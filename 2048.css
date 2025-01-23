@@ -1,0 +1,211 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: #faf8ef;
+}
+
+hr {
+    width: 500px;
+}
+
+#board {
+    width: 400px;
+    height: 400px;
+
+    background-color: #cdc1b5;
+    border: 6px solid #bbada0;
+
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tile {
+    width: 90px;
+    height: 90px;
+    border: 5px solid #bbada0;
+
+    font-size: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* colored tiles */
+
+.x2 {
+    background-color: #eee4da;
+    color: #727371;
+}
+
+.x4 {
+    background-color: #ece0ca;
+    color: #727371;
+}
+
+.x8 {
+    background-color: #f4b17a;
+    color: white;
+}
+
+.x16{
+    background-color: #f59575;
+    color: white;
+}
+
+.x32{
+    background-color: #f57c5f;
+    color: white;
+}
+
+.x64{
+    background-color: #f65d3b;
+    color: white;
+}
+
+.x128{
+    background-color: #edce71;
+    color: white;
+}
+
+.x256{
+    background-color: #edcc63;
+    color: white;
+}
+
+.x512{
+    background-color: #edc651;
+    color: white;
+}
+
+.x1024{
+    background-color: #eec744;
+    color: white;
+}
+
+.x2048{
+    background-color: #ecc230;
+    color: white;
+}
+
+.x4096 {
+    background-color: #fe3d3d;
+    color: white;
+}
+
+.x8192 {
+    background-color: #ff2020;
+    color: white;
+}
+
+#automateButton {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#automateButton:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+#automateButton:focus {
+    outline: none;
+    box-shadow: 0 0 8px rgba(72, 163, 72, 0.7);
+}
+
+@media (max-width: 600px) {
+    #automateButton {
+        width: 100%;
+        padding: 12px;
+    }
+}
+
+
+
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+
+
+  #mode-toggle {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    background-color: #f4f4f4;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/1164/1164954.png'); /* Moon Icon */
+    background-size: cover;
+    cursor: pointer;
+    transition: background-color 0.3s, background-image 0.3s;
+    margin-top: 20px;
+    margin-left: 50px;
+    
+}
+
+#mode-toggle.dark {
+    background-color: #333;
+    background-image: url('https://cdn-icons-png.flaticon.com/512/869/869869.png'); /* Sun Icon */
+}
+
+
+#header{
+    display: flex;
+    justify-content: center;
+}
+
+
+
+#rules {
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    color: #555;
+    background-color: #f9f9f9;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    width: 80%;
+    margin: 20px auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+#rules:hover {
+    background-color: #f1f1f1;
+}
+
+#footer {
+    text-align: center;
+    font-size: 14px;
+    color: #777;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    font-family: Arial, sans-serif;
+}
+
+@media (max-width: 600px) {
+    #rules {
+        font-size: 14px;
+        padding: 15px;
+    }
+    
+    #footer {
+        font-size: 12px;
+    }
+}
